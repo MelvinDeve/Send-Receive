@@ -1,0 +1,16 @@
+﻿<Window x:Class="Simple_send.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Simple_send"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="80,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="254"/>
+        <Button x:Name="connect_btn" Content="Connect" HorizontalAlignment="Left" Margin="501,92,0,0" VerticalAlignment="Top" Width="127" Height="40" Click="connect_btn_Click"/>
+        <Button x:Name="send_btn" Content="Send" HorizontalAlignment="Left" Margin="501,172,0,0" VerticalAlignment="Top" Width="127" Height="40" Click="send_btn_Click"/>
+        <Button x:Name="disconnect_btn" Content="Disconnect" HorizontalAlignment="Left" Margin="501,248,0,0" VerticalAlignment="Top" Width="127" Height="40" Click="disconnect_btn_Click"/>
+
+    </Grid>
+</Window>

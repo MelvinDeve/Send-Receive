@@ -1,0 +1,15 @@
+C:\Users\melvi\source\repos\Simple send\Simple send\bin\Debug\Simple send.exe.config
+C:\Users\melvi\source\repos\Simple send\Simple send\bin\Debug\Simple send.exe
+C:\Users\melvi\source\repos\Simple send\Simple send\bin\Debug\Simple send.pdb
+C:\Users\melvi\source\repos\Simple send\Simple send\obj\Debug\Simple send.csprojAssemblyReference.cache
+C:\Users\melvi\source\repos\Simple send\Simple send\obj\Debug\MainWindow.g.cs
+C:\Users\melvi\source\repos\Simple send\Simple send\obj\Debug\App.g.cs
+C:\Users\melvi\source\repos\Simple send\Simple send\obj\Debug\Simple send_MarkupCompile.cache
+C:\Users\melvi\source\repos\Simple send\Simple send\obj\Debug\Simple send_MarkupCompile.lref
+C:\Users\melvi\source\repos\Simple send\Simple send\obj\Debug\MainWindow.baml
+C:\Users\melvi\source\repos\Simple send\Simple send\obj\Debug\Simple send.g.resources
+C:\Users\melvi\source\repos\Simple send\Simple send\obj\Debug\Simple_send.Properties.Resources.resources
+C:\Users\melvi\source\repos\Simple send\Simple send\obj\Debug\Simple send.csproj.GenerateResource.cache
+C:\Users\melvi\source\repos\Simple send\Simple send\obj\Debug\Simple send.csproj.CoreCompileInputs.cache
+C:\Users\melvi\source\repos\Simple send\Simple send\obj\Debug\Simple send.exe
+C:\Users\melvi\source\repos\Simple send\Simple send\obj\Debug\Simple send.pdb
