@@ -13,3 +13,18 @@ C:\Users\melvi\source\repos\Simple receive\Simple receive\obj\Debug\Simple recei
 C:\Users\melvi\source\repos\Simple receive\Simple receive\obj\Debug\Simple receive.csproj.CoreCompileInputs.cache
 C:\Users\melvi\source\repos\Simple receive\Simple receive\obj\Debug\Simple receive.exe
 C:\Users\melvi\source\repos\Simple receive\Simple receive\obj\Debug\Simple receive.pdb
+C:\Users\melvi\source\SendReceive\Send-Receive\Multi receive\Simple receive\bin\Debug\Simple receive.exe.config
+C:\Users\melvi\source\SendReceive\Send-Receive\Multi receive\Simple receive\bin\Debug\Simple receive.exe
+C:\Users\melvi\source\SendReceive\Send-Receive\Multi receive\Simple receive\bin\Debug\Simple receive.pdb
+C:\Users\melvi\source\SendReceive\Send-Receive\Multi receive\Simple receive\obj\Debug\Simple receive.csprojAssemblyReference.cache
+C:\Users\melvi\source\SendReceive\Send-Receive\Multi receive\Simple receive\obj\Debug\MainWindow.g.cs
+C:\Users\melvi\source\SendReceive\Send-Receive\Multi receive\Simple receive\obj\Debug\App.g.cs
+C:\Users\melvi\source\SendReceive\Send-Receive\Multi receive\Simple receive\obj\Debug\Simple receive_MarkupCompile.cache
+C:\Users\melvi\source\SendReceive\Send-Receive\Multi receive\Simple receive\obj\Debug\Simple receive_MarkupCompile.lref
+C:\Users\melvi\source\SendReceive\Send-Receive\Multi receive\Simple receive\obj\Debug\MainWindow.baml
+C:\Users\melvi\source\SendReceive\Send-Receive\Multi receive\Simple receive\obj\Debug\Simple receive.g.resources
+C:\Users\melvi\source\SendReceive\Send-Receive\Multi receive\Simple receive\obj\Debug\Simple_receive.Properties.Resources.resources
+C:\Users\melvi\source\SendReceive\Send-Receive\Multi receive\Simple receive\obj\Debug\Simple receive.csproj.GenerateResource.cache
+C:\Users\melvi\source\SendReceive\Send-Receive\Multi receive\Simple receive\obj\Debug\Simple receive.csproj.CoreCompileInputs.cache
+C:\Users\melvi\source\SendReceive\Send-Receive\Multi receive\Simple receive\obj\Debug\Simple receive.exe
+C:\Users\melvi\source\SendReceive\Send-Receive\Multi receive\Simple receive\obj\Debug\Simple receive.pdb

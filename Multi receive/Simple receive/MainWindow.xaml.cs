@@ -23,7 +23,9 @@ namespace Simple_receive
     /// </summary>
     public partial class MainWindow : Window
     {
-        
+        private List<Socket> _clients = new List<Socket>();
+        bool _isConnected;
+        bool drRunning = false;
         IPAddress ipAddress = IPAddress.Parse("127.0.0.1");
         int Port = 8000;
         TcpListener host = null;
@@ -54,8 +56,16 @@ namespace Simple_receive
                 while (true)
                 {
                     Dispatcher.Invoke(() => { textBlock.Text += "\nVerbinde..."; });
-                    TcpClient client = host.AcceptTcpClient();
-                    Dispatcher.Invoke(() => { textBlock.Text += "\nVerbunden..."; });
+                    Socket client = host.AcceptSocket();
+                    _clients.Add(client);
+                    _isConnected = true;
+                    Dispatcher.Invoke(() => { textBlock.Text += "\nVerbunden..." + _clients.Count; });
+                    if (!drRunning)
+                    {
+                        Thread worker = new Thread(DataReceive);
+                        worker.Start();
+                    }
+                    /*
                     data = null;
                     NetworkStream stream = client.GetStream();
                     int i;
@@ -70,6 +80,7 @@ namespace Simple_receive
 
 
                     }
+                    */
                 }
 
             }catch(Exception e)
@@ -80,7 +91,44 @@ namespace Simple_receive
             finally
             {
                 host.Stop();
+                _isConnected = false;
             }
         }
-    }
+
+        private void DataReceive()
+        {
+            drRunning = true;
+            while (_isConnected)
+            {
+                List<Socket> clients = new List<Socket>(_clients);
+                foreach (Socket client in clients)
+                {
+                    try
+                    {
+                        if (!client.Connected) continue;
+                        string txt = "";
+                        while (client.Available > 0)
+                        {
+                            byte[] bytes = new byte[client.ReceiveBufferSize];
+                            int byteRec = client.Receive(bytes);
+                            if (byteRec > 0)
+                                txt += Encoding.UTF8.GetString(bytes, 0, byteRec);
+                        }
+                        if (!string.IsNullOrEmpty(txt))
+                        {
+                            Dispatcher.Invoke(() => { textBlock.Text += "\n" + txt; });
+                        }
+                        
+                }
+                    catch (Exception e)
+                    {
+                        Dispatcher.Invoke(() => { textBlock.Text += "\n Exception: " + e; });
+                    }
+                }
+            }
+            drRunning = false;
+        }
+
+
+        }
 }
