@@ -65,22 +65,6 @@ namespace Simple_receive
                         Thread worker = new Thread(DataReceive);
                         worker.Start();
                     }
-                    /*
-                    data = null;
-                    NetworkStream stream = client.GetStream();
-                    int i;
-                    while ((i = stream.Read(bytes, 0, bytes.Length)) != 0)
-                    {
-                        data = System.Text.Encoding.ASCII.GetString(bytes, 0, i);
-                        Dispatcher.Invoke(() => { textBlock.Text += "\n" + data; });
-
-                        data = data.ToUpper();
-
-                        byte[] msg = System.Text.Encoding.ASCII.GetBytes(data);
-
-
-                    }
-                    */
                 }
 
             }catch(Exception e)
