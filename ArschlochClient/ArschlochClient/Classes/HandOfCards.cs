@@ -8,5 +8,6 @@ namespace ArschlochClient.Classes
 {
     class HandOfCards
     {
+        List<Card>
     }
 }

@@ -24,5 +24,12 @@ namespace ArschlochClient
         {
             InitializeComponent();
         }
+
+        private void textBlock_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        
     }
 }
