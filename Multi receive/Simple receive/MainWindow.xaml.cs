@@ -112,7 +112,5 @@ namespace Simple_receive
             }
             drRunning = false;
         }
-
-
-        }
+    }
 }
