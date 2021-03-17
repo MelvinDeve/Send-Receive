@@ -10,7 +10,7 @@ namespace ArschlochHost
 {
     class Card
     {
-        private int value;
+        public int value;
         private string colour;
         private Image img;
         private static int counter = 0;

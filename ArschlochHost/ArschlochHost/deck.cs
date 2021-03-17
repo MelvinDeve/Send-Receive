@@ -6,18 +6,14 @@ using System.Threading.Tasks;
 
 namespace ArschlochHost
 {
-    class deck
+   public static class deck
     {
-        private List<Card> Deck = new List<Card>();
-        private int rounds = 0;
+        private static List<Card> Deck = createDeck();
+        private static int rounds = 0;
 
-        public deck()
+        private static List<Card> createDeck()
         {
-            createDeck();
-        }
-
-        private void createDeck()
-        {
+            List<Card> tmp = new List<Card>();
             string cardcolour = "herz";
 
             while (rounds != 4)
@@ -28,27 +24,28 @@ namespace ArschlochHost
                 }
                 else if (rounds == 1)
                 {
-                    cardcolour = "blatt";
+                    cardcolour = "karo";
                 }
                 else if (rounds == 2)
                 {
-                    cardcolour = "schelle";
+                    cardcolour = "kreuz";
                 }
                 else
                 {
-                    cardcolour = "eichel";
+                    cardcolour = "piek";
                 }
 
                 for (int i = 6; i < 15; i++)
                 {
-                    Deck.Add(new Card(i, cardcolour));
+                    tmp.Add(new Card(i, cardcolour));
 
                 }
                 rounds++;
             }
+            return tmp;
         }
 
-        public void resetDeck()
+        public static void resetDeck()
         {
             for (int i = 0; i < Deck.Count; i++)
             {
@@ -56,7 +53,7 @@ namespace ArschlochHost
             }
         }
 
-        public int[] handoutCard(int numOfPlayers)
+        public static int[] handoutCard(int numOfPlayers)
         {
             Random rand = new Random();
             int toBehanded = 36 / numOfPlayers;
@@ -77,5 +74,14 @@ namespace ArschlochHost
             return handcards;
 
         }
+
+        public static int getValue(int id)
+        {
+            return Deck[id].value;
+        }
+
+       
     }
+
+   
 }
