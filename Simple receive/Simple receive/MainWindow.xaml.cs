@@ -49,24 +49,30 @@ namespace Simple_receive
                 host.Start();
 
                 Byte[] bytes = new Byte[256];
-                String data = null;
+
 
                 while (true)
                 {
                     Dispatcher.Invoke(() => { textBlock.Text += "\nVerbinde..."; });
                     TcpClient client = host.AcceptTcpClient();
                     Dispatcher.Invoke(() => { textBlock.Text += "\nVerbunden..."; });
-                    data = null;
+
                     NetworkStream stream = client.GetStream();
                     int i;
                     while ((i = stream.Read(bytes, 0, bytes.Length)) != 0)
                     {
-                        data = System.Text.Encoding.ASCII.GetString(bytes, 0, i);
-                        Dispatcher.Invoke(() => { textBlock.Text += "\n" + data; });
+                        byte[] boolteil = new byte[1];
+                        boolteil[0] = bytes[0];
 
-                        data = data.ToUpper();
+                        bool empfbool = BitConverter.ToBoolean(boolteil, 0);
 
-                        byte[] msg = System.Text.Encoding.ASCII.GetBytes(data);
+                        Int16 intteil = BitConverter.ToInt16(bytes, 1);
+
+                        if (empfbool)
+                        {
+                            Dispatcher.Invoke(() => { textBlock.Text += "\n" + intteil; });
+                        }
+
 
 
                     }
