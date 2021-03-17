@@ -1,0 +1,17 @@
+﻿<Window x:Class="ArschlochClient.Rules"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ArschlochClient"
+        mc:Ignorable="d"
+        Icon="Assets/game_icon.png"
+        Title="Rules" Height="450" Width="800"  Background="#3498db" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Image x:Name="ImgLogo" Source="Assets/card_hand.png" Margin="704,0,0,335"/>
+        <TextBox Margin="74,70,75,30" TextWrapping="Wrap" IsReadOnly="True" Text="Zu Beginn werden alle Karten gleichmäßig verdeckt an die Spieler ausgeteilt. Wer die vorher bestimmte Anfangskarte (meist die Herz Sechs) hält, spielt als Erster aus. Reihum sind die anderen Spieler am Zug. Sie können passen oder den Stich mit einer höheren Karte übernehmen.&#xD;&#xA;Bei Mehrlingen kann der Stich nur mit gleich vielen Karten eines höheren Rangs gemacht werden. Das bedeutet, wenn ein Mehrling von drei Neunen auf dem Tisch liegt, kann der Stich nur mit drei Zehnen, Buben, Damen, Königen oder Assen gemacht werden.&#xD;&#xA;Es kann sein, dass es strategisch sinnvoll ist, zu passen, obwohl man den Stich machen könnte.&#xD;&#xA;Es besteht also keine Stichpflicht. Der Spieler, der den Stich gemacht hat, kommt als Nächster raus.  &#xD;&#xA;Die Spielrunde ist zu Ende, wenn der vorletzte Spieler keine Karte mehr hat. Der letzte Spieler mit Karten auf der Hand ist das Arschloch. &#xD;&#xA;Wer als Erster keine einzige Karte mehr auf der Hand hat, wird der König der Runde.&#xD;&#xA;Bei vielen Varianten ändert sich nun die Sitzordnung gemäß der Höhe der gewonnenen Ämter.&#xD;&#xA;Das Arschloch ist nun der Geber, denn die neue Runde wird von dem Verlierer begonnen.&#xD;&#xA;In dieser Runde werden Karten gedrückt. Das bedeutet, dass Spieler mit niedrigen Ämtern ihre höchsten Karten an Spieler mit höheren Ämtern abgeben müssen.&#xD;&#xA;Der König bekommt so die höchsten Karten vom Arschloch im Tausch gegen seine Niedrigsten. Ebenso wird mit den anderen Ämtern verfahren. Vize-Arschloch tauscht mit Vize-König und so weiter. Vorher sollte das unbedingt abgesprochen werden." Background="{x:Null}" BorderBrush="Black" FontSize="16" Foreground="Black"/>
+        <Button x:Name="BtnBack" Content="Zurück" Background="#FF2980B9" BorderBrush="Black" Margin="0,0,718,384" Click="BtnBack_Click"/>
+        <Label x:Name="LblRules" Content="Regeln" VerticalAlignment="Top" Height="63" Margin="335,10,325,0" FontSize="36" FontWeight="Bold" Foreground="Black"/>
+
+    </Grid>
+</Window>

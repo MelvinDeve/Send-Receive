@@ -10,27 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace ArschlochClient
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for CardField.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class CardField : Window
     {
-        public MainWindow()
+        public CardField()
         {
             InitializeComponent();
-        }
-
-        private void BtnRules_Click(object sender, RoutedEventArgs e)
-        {
-            this.Hide();
-            Rules rulesWindow = new Rules();
-            rulesWindow.Show();
-            this.Close();
         }
     }
 }

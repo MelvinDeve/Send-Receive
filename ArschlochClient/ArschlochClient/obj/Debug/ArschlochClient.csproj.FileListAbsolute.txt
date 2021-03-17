@@ -13,3 +13,5 @@ G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\ArschlochClient\ArschlochC
 G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\ArschlochClient\ArschlochClient\obj\Debug\ArschlochClient.csproj.CoreCompileInputs.cache
 G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\ArschlochClient\ArschlochClient\obj\Debug\ArschlochClient.exe
 G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\ArschlochClient\ArschlochClient\obj\Debug\ArschlochClient.pdb
+G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\ArschlochClient\ArschlochClient\obj\Debug\Rules.g.cs
+G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\ArschlochClient\ArschlochClient\obj\Debug\Rules.baml
