@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArschlochHost", "ArschlochHost\ArschlochHost.csproj", "{E65EFD47-B872-4947-ADC0-20ED7BEDE62F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E65EFD47-B872-4947-ADC0-20ED7BEDE62F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E65EFD47-B872-4947-ADC0-20ED7BEDE62F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E65EFD47-B872-4947-ADC0-20ED7BEDE62F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E65EFD47-B872-4947-ADC0-20ED7BEDE62F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {80BEA3A6-CC6A-44FF-BD3D-7C3F514A9656}
+	EndGlobalSection
+EndGlobal
