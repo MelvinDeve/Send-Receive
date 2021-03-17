@@ -1,0 +1,15 @@
+G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\ArschlochClient\ArschlochClient\obj\Debug\ArschlochClient.csprojAssemblyReference.cache
+G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\ArschlochClient\ArschlochClient\obj\Debug\MainWindow.g.cs
+G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\ArschlochClient\ArschlochClient\obj\Debug\App.g.cs
+G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\ArschlochClient\ArschlochClient\obj\Debug\ArschlochClient_MarkupCompile.cache
+G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\ArschlochClient\ArschlochClient\obj\Debug\ArschlochClient_MarkupCompile.lref
+G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\ArschlochClient\ArschlochClient\bin\Debug\ArschlochClient.exe.config
+G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\ArschlochClient\ArschlochClient\bin\Debug\ArschlochClient.exe
+G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\ArschlochClient\ArschlochClient\bin\Debug\ArschlochClient.pdb
+G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\ArschlochClient\ArschlochClient\obj\Debug\MainWindow.baml
+G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\ArschlochClient\ArschlochClient\obj\Debug\ArschlochClient.g.resources
+G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\ArschlochClient\ArschlochClient\obj\Debug\ArschlochClient.Properties.Resources.resources
+G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\ArschlochClient\ArschlochClient\obj\Debug\ArschlochClient.csproj.GenerateResource.cache
+G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\ArschlochClient\ArschlochClient\obj\Debug\ArschlochClient.csproj.CoreCompileInputs.cache
+G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\ArschlochClient\ArschlochClient\obj\Debug\ArschlochClient.exe
+G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\ArschlochClient\ArschlochClient\obj\Debug\ArschlochClient.pdb
