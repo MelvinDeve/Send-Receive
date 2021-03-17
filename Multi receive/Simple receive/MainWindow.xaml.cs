@@ -50,9 +50,6 @@ namespace Simple_receive
                 host = new TcpListener(ipAddress, Port);
                 host.Start();
 
-                Byte[] bytes = new Byte[256];
-                String data = null;
-
                 while (true)
                 {
                     Dispatcher.Invoke(() => { textBlock.Text += "\nVerbinde..."; });
@@ -89,7 +86,11 @@ namespace Simple_receive
                 {
                     try
                     {
-                        if (!client.Connected) continue;
+                        if (!client.Connected)
+                        {
+                            _clients.Remove(client);
+                            continue;
+                        }
                         string txt = "";
                         while (client.Available > 0)
                         {
