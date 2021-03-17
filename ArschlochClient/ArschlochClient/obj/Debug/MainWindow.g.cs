@@ -40,22 +40,6 @@ namespace ArschlochClient {
     /// </summary>
     public partial class MainWindow : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
-        
-        #line 10 "..\..\MainWindow.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button connect;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 12 "..\..\MainWindow.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBox textBlock;
-        
-        #line default
-        #line hidden
-        
         private bool _contentLoaded;
         
         /// <summary>
@@ -84,27 +68,6 @@ namespace ArschlochClient {
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1800:DoNotCastUnnecessarily")]
         void System.Windows.Markup.IComponentConnector.Connect(int connectionId, object target) {
-            switch (connectionId)
-            {
-            case 1:
-            this.connect = ((System.Windows.Controls.Button)(target));
-            
-            #line 10 "..\..\MainWindow.xaml"
-            this.connect.Click += new System.Windows.RoutedEventHandler(this.connect_Click);
-            
-            #line default
-            #line hidden
-            return;
-            case 2:
-            this.textBlock = ((System.Windows.Controls.TextBox)(target));
-            
-            #line 12 "..\..\MainWindow.xaml"
-            this.textBlock.TextChanged += new System.Windows.Controls.TextChangedEventHandler(this.textBlock_TextChanged);
-            
-            #line default
-            #line hidden
-            return;
-            }
             this._contentLoaded = true;
         }
     }
