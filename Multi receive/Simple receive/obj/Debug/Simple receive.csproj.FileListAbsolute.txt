@@ -28,3 +28,18 @@ C:\Users\melvi\source\SendReceive\Send-Receive\Multi receive\Simple receive\obj\
 C:\Users\melvi\source\SendReceive\Send-Receive\Multi receive\Simple receive\obj\Debug\Simple receive.csproj.CoreCompileInputs.cache
 C:\Users\melvi\source\SendReceive\Send-Receive\Multi receive\Simple receive\obj\Debug\Simple receive.exe
 C:\Users\melvi\source\SendReceive\Send-Receive\Multi receive\Simple receive\obj\Debug\Simple receive.pdb
+G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\Multi receive\Simple receive\bin\Debug\Simple receive.exe.config
+G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\Multi receive\Simple receive\bin\Debug\Simple receive.exe
+G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\Multi receive\Simple receive\bin\Debug\Simple receive.pdb
+G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\Multi receive\Simple receive\obj\Debug\Simple receive.csprojAssemblyReference.cache
+G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\Multi receive\Simple receive\obj\Debug\MainWindow.g.cs
+G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\Multi receive\Simple receive\obj\Debug\App.g.cs
+G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\Multi receive\Simple receive\obj\Debug\Simple receive_MarkupCompile.cache
+G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\Multi receive\Simple receive\obj\Debug\Simple receive_MarkupCompile.lref
+G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\Multi receive\Simple receive\obj\Debug\MainWindow.baml
+G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\Multi receive\Simple receive\obj\Debug\Simple receive.g.resources
+G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\Multi receive\Simple receive\obj\Debug\Simple_receive.Properties.Resources.resources
+G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\Multi receive\Simple receive\obj\Debug\Simple receive.csproj.GenerateResource.cache
+G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\Multi receive\Simple receive\obj\Debug\Simple receive.csproj.CoreCompileInputs.cache
+G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\Multi receive\Simple receive\obj\Debug\Simple receive.exe
+G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\Multi receive\Simple receive\obj\Debug\Simple receive.pdb

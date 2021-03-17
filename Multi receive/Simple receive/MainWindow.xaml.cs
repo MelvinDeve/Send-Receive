@@ -50,9 +50,6 @@ namespace Simple_receive
                 host = new TcpListener(ipAddress, Port);
                 host.Start();
 
-                Byte[] bytes = new Byte[256];
-                String data = null;
-
                 while (true)
                 {
                     Dispatcher.Invoke(() => { textBlock.Text += "\nVerbinde..."; });
@@ -65,22 +62,6 @@ namespace Simple_receive
                         Thread worker = new Thread(DataReceive);
                         worker.Start();
                     }
-                    /*
-                    data = null;
-                    NetworkStream stream = client.GetStream();
-                    int i;
-                    while ((i = stream.Read(bytes, 0, bytes.Length)) != 0)
-                    {
-                        data = System.Text.Encoding.ASCII.GetString(bytes, 0, i);
-                        Dispatcher.Invoke(() => { textBlock.Text += "\n" + data; });
-
-                        data = data.ToUpper();
-
-                        byte[] msg = System.Text.Encoding.ASCII.GetBytes(data);
-
-
-                    }
-                    */
                 }
 
             }catch(Exception e)
@@ -105,7 +86,11 @@ namespace Simple_receive
                 {
                     try
                     {
-                        if (!client.Connected) continue;
+                        if (!client.Connected)
+                        {
+                            _clients.Remove(client);
+                            continue;
+                        }
                         string txt = "";
                         while (client.Available > 0)
                         {
@@ -128,7 +113,5 @@ namespace Simple_receive
             }
             drRunning = false;
         }
-
-
-        }
+    }
 }
