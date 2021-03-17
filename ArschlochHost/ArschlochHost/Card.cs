@@ -10,15 +10,14 @@ namespace ArschlochHost
 {
     class Card
     {
-       private int value;
-       private string colour;
-       private Image img;
-       private static int counter = 0;
-       
-    
-       public int id { get; set; }
-       public bool handedOut;
-      
+        public int value;
+        private string colour;
+        private Image img;
+        private static int counter = 0;
+
+        public int id { get; set; }
+        public bool handedOut;
+
 
         public Card(int value, string colour)
         {
@@ -27,7 +26,7 @@ namespace ArschlochHost
             img = setImg();
             this.id = System.Threading.Interlocked.Increment(ref counter);
             handedOut = false;
-        
+
         }
 
         private Image setImg()
