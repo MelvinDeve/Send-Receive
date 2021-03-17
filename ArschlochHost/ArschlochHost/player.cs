@@ -11,7 +11,7 @@ namespace ArschlochHost
         private string name;
         private int[] handcards;
 
-        player(string name, int numofPlayers)
+        public player(string name, int numofPlayers)
         {
             this.name = name;
             handcards = deck.handoutCards(numofPlayers);

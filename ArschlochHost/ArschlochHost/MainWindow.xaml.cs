@@ -25,6 +25,7 @@ namespace ArschlochHost
     public partial class MainWindow : Window
     {
         private List<Socket> _clients = new List<Socket>();
+        private List<player> players = new List<player>();
         bool _isConnected;
         bool drRunning = false;
         IPAddress ipAddress = IPAddress.Parse("127.0.0.1");
@@ -120,6 +121,14 @@ namespace ArschlochHost
                 }
             }
             drRunning = false;
+        }
+
+        private void createPlayerList()
+        {
+            for(int i=0; i<_clients.Count; i++)
+            {
+                players.Add(new player("player" + (i + 1), _clients.Count));
+            }
         }
 
         private void gameManager()
