@@ -8,6 +8,22 @@ namespace ArschlochClient.Classes
 {
     class HandOfCards
     {
-        List<Card>
+        int[] ids = null;
+
+        public void getNewHand()
+        {
+            HandOfCards MyHand = new HandOfCards();
+            SimpleReceive Rec = new SimpleReceive();
+            List<Card> Hand = new List<Card>();
+            deck deck = new deck();
+
+            foreach (int id in ids)
+            {
+
+            }
+        }
+        
+
+
     }
 }

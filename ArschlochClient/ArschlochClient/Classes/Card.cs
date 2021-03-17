@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Drawing;
 using System.Windows.Controls;
 
-namespace Simple_receive
+namespace ArschlochClient.Classes
 {
     class Card
     {
