@@ -15,3 +15,5 @@ G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\ArschlochClient\ArschlochC
 G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\ArschlochClient\ArschlochClient\obj\Debug\ArschlochClient.pdb
 G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\ArschlochClient\ArschlochClient\obj\Debug\Rules.g.cs
 G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\ArschlochClient\ArschlochClient\obj\Debug\Rules.baml
+G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\ArschlochClient\ArschlochClient\obj\Debug\CardField.g.cs
+G:\Siemens\TIKNW1_Netzwerkprogrammierung\Send-Receive\ArschlochClient\ArschlochClient\obj\Debug\CardField.baml
