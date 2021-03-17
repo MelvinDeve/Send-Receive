@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:ArschlochHost"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Background="#3498db">
+        <Button x:Name="GameStart" Content="Spiel Starten" HorizontalAlignment="Left" VerticalAlignment="Top" Width="115" Margin="56,74,0,0" Height="52" Background="#FF2980B9" BorderBrush="Black"/>
+        <TextBox x:Name="TxBxServer" HorizontalAlignment="Left" Height="314" Margin="509,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194"/>
     </Grid>
 </Window>
