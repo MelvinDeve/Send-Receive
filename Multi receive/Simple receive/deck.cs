@@ -22,7 +22,11 @@ namespace Simple_receive
             
             while (rounds != 4)
             {
-                if (rounds == 1)
+                if (cardcolour=="herz")
+                {
+
+                }
+                else if (rounds == 1)
                 {
                     cardcolour = "blatt";
                 }
@@ -44,7 +48,7 @@ namespace Simple_receive
             }
         }
 
-        private void resetDeck()
+        public void resetDeck()
         {
             for (int i =0; i<Deck.Count;i++)
             {
@@ -52,12 +56,12 @@ namespace Simple_receive
             }
         }
 
-        private int[] handoutCard (int numOfPlayers)
+        public int[] handoutCard (int numOfPlayers)
         {
             Random rand = new Random();
             int toBehanded = 36 / numOfPlayers;
             int[] handcards = new int[toBehanded];
-            for (int i=0; i<8; i++)
+            for (int i=0; i<toBehanded; i++)
             {
                 
                 int currentcard = rand.Next(36);

@@ -35,10 +35,10 @@ namespace Simple_receive
             //search for file in folder where all pngs sit: eg heart7
             //set img to found file in folder
             string filename = colour + value;
-            
-            Image temp = Image.FromFile(filename);
 
-           
+            //Image temp = Image.FromFile(filename);
+
+            Image temp = new Image();
             return temp;
 
         }
