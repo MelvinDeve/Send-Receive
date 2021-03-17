@@ -51,7 +51,14 @@ namespace Simple_send
             
             string toSend = "";
             Dispatcher.Invoke(() => { toSend = textBox.Text; });
-            byte[] buffer = ASCIIEncoding.UTF8.GetBytes(toSend);
+            //byte[] buffer = ASCIIEncoding.UTF8.GetBytes(toSend);
+            byte[] buffer = new byte[3];
+            buffer[0] = BitConverter.GetBytes(true)[0];
+            byte[] intbuff = new byte[2];
+            Int16 inttosend = 36;
+            intbuff = BitConverter.GetBytes(inttosend);
+            buffer[1] = intbuff[0];
+            buffer[2] = intbuff[1];
 
             NetworkStream nwStream = client.GetStream();
             nwStream.Write(buffer, 0, buffer.Length);
