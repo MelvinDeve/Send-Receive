@@ -53,7 +53,7 @@ namespace ArschlochHost
             }
         }
 
-        public static int[] handoutCard(int numOfPlayers)
+        public static int[] handoutCards(int numOfPlayers)
         {
             Random rand = new Random();
             int toBehanded = 36 / numOfPlayers;
