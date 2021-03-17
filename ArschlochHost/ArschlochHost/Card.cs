@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Drawing;
 using System.Windows.Controls;
 
-namespace Simple_receive
+namespace ArschlochHost
 {
     class Card
     {
@@ -14,6 +14,7 @@ namespace Simple_receive
        private string colour;
        private Image img;
        private static int counter = 0;
+       
     
        public int id { get; set; }
        public bool handedOut;
