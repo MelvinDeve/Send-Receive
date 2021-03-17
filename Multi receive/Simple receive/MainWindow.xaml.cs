@@ -86,7 +86,11 @@ namespace Simple_receive
                 {
                     try
                     {
-                        if (!client.Connected) continue;
+                        if (!client.Connected)
+                        {
+                            _clients.Remove(client);
+                            continue;
+                        }
                         string txt = "";
                         while (client.Available > 0)
                         {
