@@ -33,6 +33,13 @@ namespace Simple_receive
         public MainWindow()
         {
             InitializeComponent();
+            deck testDeck = new deck();
+            int[] hand1 = testDeck.handoutCard(4);
+            int[] hand2 = testDeck.handoutCard(4);
+            int[] hand3 = testDeck.handoutCard(4);
+            int[] hand4 = testDeck.handoutCard(4);
+            testDeck.resetDeck();
+
         }
 
         private void connect_Click(object sender, RoutedEventArgs e)
