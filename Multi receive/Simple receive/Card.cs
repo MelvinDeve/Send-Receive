@@ -13,6 +13,10 @@ namespace Simple_receive
        private int value;
        private string colour;
        private Image img;
+       private static int counter = 0;
+    
+       public int id { get; set; }
+       public bool handedOut;
       
 
         public Card(int value, string colour)
@@ -20,17 +24,21 @@ namespace Simple_receive
             this.colour = colour;
             this.value = value;
             img = setImg();
+            this.id = System.Threading.Interlocked.Increment(ref counter);
+            handedOut = false;
         
         }
 
         private Image setImg()
         {
+
+            //search for file in folder where all pngs sit: eg heart7
+            //set img to found file in folder
             string filename = colour + value;
             
             Image temp = Image.FromFile(filename);
 
-            //search for file in folder where all pngs sit: eg heart7
-            //set img to found file in folder
+           
             return temp;
 
         }
