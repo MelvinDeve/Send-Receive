@@ -9,6 +9,6 @@
     <Grid>
         <Button x:Name="connect" Content="Start Connecting" HorizontalAlignment="Left" Margin="121,86,0,0" VerticalAlignment="Top" Width="98" Click="connect_Click"/>
         <TextBox x:Name="textBlock" HorizontalAlignment="Left" Height="234" TextWrapping="Wrap" Text="Connected Players: 0" VerticalAlignment="Top" Width="153" Margin="491,92,0,0"/>
-        <Button x:Name="button" Content="Start Game" HorizontalAlignment="Left" Margin="121,143,0,0" VerticalAlignment="Top" Width="98"/>
+        <Button x:Name="startGameBtn" Content="Start Game" HorizontalAlignment="Left" Margin="121,143,0,0" VerticalAlignment="Top" Width="98" Click="startGameBtn_Click"/>
     </Grid>
 </Window>

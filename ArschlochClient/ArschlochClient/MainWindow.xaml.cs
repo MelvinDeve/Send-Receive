@@ -23,7 +23,7 @@ namespace ArschlochClient
     /// </summary>
     public partial class MainWindow : Window
     {
-        IPAddress ipAddress = IPAddress.Parse("127.0.0.1");
+        IPAddress ipAddress = IPAddress.Parse("192.168.178.28");
         int Port = 8000;
         TcpListener host = null;
 
@@ -34,11 +34,46 @@ namespace ArschlochClient
 
         private void connect_Click(object sender, RoutedEventArgs e)
         {
-            
-            Thread worker = new Thread(getResponse);
-            worker.Start();
+            if (host == null)
+            {
+                Thread worker = new Thread(getCards);
+                worker.Start();
+            }
         }
 
+        public void getCards()
+        {
+            try
+            {
+                host = new TcpListener(ipAddress, Port);
+                host.Start();
+
+                while (true)
+                {
+                    TcpClient client = host.AcceptTcpClient();
+                    NetworkStream stream = client.GetStream();
+                    int i;
+
+                    Byte[] bytes = new Byte[256];
+                    List<int> cards = new List<int>();
+                    while ((i = stream.Read(bytes, 0, bytes.Length)) != 0)
+                    {
+                        int j = 0;
+                        while (bytes[j] != 0)
+                        {
+                            cards.Add(BitConverter.ToInt32(bytes, j));
+                            j += 4;
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Dispatcher.Invoke(() => { textBlock.Text += "\n Exception: " + e; });
+
+            }
+        }
+        /*
         public void getResponse()
         {
             try
@@ -74,13 +109,15 @@ namespace ArschlochClient
 
             }
         }
-
+        */
+        /*
         private void send_btn_Click(object sender, RoutedEventArgs e)
         {
             Thread worker = new Thread(sendPerThread);
             worker.Start();
         }
-
+        */
+        /*
         private void sendPerThread()
         {
             byte[] buffer = ASCIIEncoding.UTF8.GetBytes(toSend);
@@ -89,6 +126,7 @@ namespace ArschlochClient
             nwStream.Write(buffer, 0, buffer.Length);
 
         }
+        */
 
         private void textBlock_TextChanged(object sender, TextChangedEventArgs e)
         {
