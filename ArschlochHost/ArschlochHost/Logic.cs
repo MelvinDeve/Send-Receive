@@ -25,6 +25,7 @@ namespace ArschlochHost
             }
         }
 
+        /*
         public bool checkamount(int value, player currentplayer)
         {
             int count = 0;
@@ -34,5 +35,6 @@ namespace ArschlochHost
                 if ()
             }
         }
+        */
     }
 }

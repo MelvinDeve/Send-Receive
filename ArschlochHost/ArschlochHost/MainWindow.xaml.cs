@@ -34,6 +34,7 @@ namespace ArschlochHost
         private int currentCard = 0;
         private Int16 ammount = 0;
         private bool listening = false;
+        private bool playersConnecting = true;
 
 
 
@@ -44,8 +45,6 @@ namespace ArschlochHost
 
         private void connect_Click(object sender, RoutedEventArgs e)
         {
-            textBlock.Text = "";
-            Dispatcher.Invoke(() => { textBlock.Text = ""; });
             Thread worker = new Thread(getResponse);
             worker.Start();
         }
@@ -57,18 +56,12 @@ namespace ArschlochHost
                 host = new TcpListener(ipAddress, Port);
                 host.Start();
 
-                while (true)
+                while (playersConnecting)
                 {
-                    Dispatcher.Invoke(() => { textBlock.Text += "\nVerbinde..."; });
                     Socket client = host.AcceptSocket();
                     _clients.Add(client);
                     _isConnected = true;
-                    Dispatcher.Invoke(() => { textBlock.Text += "\nVerbunden..." + _clients.Count; });
-                    if (!drRunning)
-                    {
-                        Thread worker = new Thread(DataReceive);
-                        worker.Start();
-                    }
+                    Dispatcher.Invoke(() => { textBlock.Text = "Connected Players: " + _clients.Count; });
                 }
 
             }
@@ -76,11 +69,6 @@ namespace ArschlochHost
             {
                 Dispatcher.Invoke(() => { textBlock.Text += "\n Exception: " + e; });
 
-            }
-            finally
-            {
-                host.Stop();
-                _isConnected = false;
             }
         }
 
@@ -131,8 +119,41 @@ namespace ArschlochHost
             }
         }
 
+        private void publishPlayerHands()
+        {
+            for(int i = 0; i < _clients.Count; i++)
+            {
+                byte[] byteCards = new byte[players[i].getHandCards().Length*4];
+                byte[] tempByteCards = new byte[4];
+                int byteCardsPos = 0;
+                foreach(int card in players[i].getHandCards())
+                {
+                    tempByteCards = BitConverter.GetBytes(card);
+                    int m = byteCardsPos + 4;
+                    int tempByteCardsPos = 0;
+                    while (byteCardsPos < m)
+                    {
+                        byteCards[byteCardsPos] = tempByteCards[tempByteCardsPos];
+                        byteCardsPos++;
+                        tempByteCardsPos++;
+                    }
+                }
+                _clients[i].Send(byteCards);
+            }
+        }
+
         private void gameManager()
         {
+            if (_clients.Count > 1)
+            {
+                playersConnecting = false;
+                createPlayerList();
+                publishPlayerHands();
+            }
+            else
+            {
+                return;
+            }
             if(currentCard == 0)
             {
 

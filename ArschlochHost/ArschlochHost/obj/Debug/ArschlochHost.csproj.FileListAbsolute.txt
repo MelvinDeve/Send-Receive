@@ -1,0 +1,15 @@
+C:\Users\melvi\source\SendReceive\Send-Receive\ArschlochHost\ArschlochHost\obj\Debug\ArschlochHost.csprojAssemblyReference.cache
+C:\Users\melvi\source\SendReceive\Send-Receive\ArschlochHost\ArschlochHost\obj\Debug\MainWindow.g.cs
+C:\Users\melvi\source\SendReceive\Send-Receive\ArschlochHost\ArschlochHost\obj\Debug\App.g.cs
+C:\Users\melvi\source\SendReceive\Send-Receive\ArschlochHost\ArschlochHost\obj\Debug\ArschlochHost_MarkupCompile.cache
+C:\Users\melvi\source\SendReceive\Send-Receive\ArschlochHost\ArschlochHost\obj\Debug\ArschlochHost_MarkupCompile.lref
+C:\Users\melvi\source\SendReceive\Send-Receive\ArschlochHost\ArschlochHost\bin\Debug\ArschlochHost.exe.config
+C:\Users\melvi\source\SendReceive\Send-Receive\ArschlochHost\ArschlochHost\bin\Debug\ArschlochHost.exe
+C:\Users\melvi\source\SendReceive\Send-Receive\ArschlochHost\ArschlochHost\bin\Debug\ArschlochHost.pdb
+C:\Users\melvi\source\SendReceive\Send-Receive\ArschlochHost\ArschlochHost\obj\Debug\MainWindow.baml
+C:\Users\melvi\source\SendReceive\Send-Receive\ArschlochHost\ArschlochHost\obj\Debug\ArschlochHost.g.resources
+C:\Users\melvi\source\SendReceive\Send-Receive\ArschlochHost\ArschlochHost\obj\Debug\ArschlochHost.Properties.Resources.resources
+C:\Users\melvi\source\SendReceive\Send-Receive\ArschlochHost\ArschlochHost\obj\Debug\ArschlochHost.csproj.GenerateResource.cache
+C:\Users\melvi\source\SendReceive\Send-Receive\ArschlochHost\ArschlochHost\obj\Debug\ArschlochHost.csproj.CoreCompileInputs.cache
+C:\Users\melvi\source\SendReceive\Send-Receive\ArschlochHost\ArschlochHost\obj\Debug\ArschlochHost.exe
+C:\Users\melvi\source\SendReceive\Send-Receive\ArschlochHost\ArschlochHost\obj\Debug\ArschlochHost.pdb

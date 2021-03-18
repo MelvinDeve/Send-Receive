@@ -15,7 +15,6 @@ namespace ArschlochHost
         {
             this.name = name;
             handcards = deck.handoutCards(numofPlayers);
-
         }
 
         public int[] getHandCards()
