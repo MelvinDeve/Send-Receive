@@ -13,9 +13,10 @@ namespace ArschlochHost
             
             int valOT = deck.getValue(onthetable);
             int valOH = deck.getValue(onHand);
+            int numOH = checkamount(valOT, currentplayer);
 
 
-            if (valOH>valOT)
+            if (valOH>valOT && numOH>=numOT)
             {
                 return true;
             }
@@ -25,16 +26,37 @@ namespace ArschlochHost
             }
         }
 
-        /*
-        public bool checkamount(int value, player currentplayer)
+        public int checkamount(int value, player currentplayer)
         {
             int count = 0;
-            int [] tmpcrads = currentplayer.getHandCards();
-            for (int i=0; i<tmpcrads.Length;i++)
+            int [] tmpcards = currentplayer.getHandCards();
+            for (int i=0; i<tmpcards.Length;i++)
             {
-                if ()
+                if (deck.getValue(tmpcards[i])==value)
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        public void switchCards(player arschloch, player koenig, int acardID, int kcardID)
+        {
+
+            for (int i=0; i<arschloch.getHandCards().Length;i++)
+            {
+                if (arschloch.getHandCards()[i]==acardID)
+                {
+                    arschloch.getHandCards()[i] = kcardID;
+                }
+            }
+            for(int i=0; i<koenig.getHandCards().Length;i++)
+            {
+                if(koenig.getHandCards()[i]==kcardID)
+                {
+                    koenig.getHandCards()[i] = acardID;
+                }
             }
         }
-        */
     }
 }
