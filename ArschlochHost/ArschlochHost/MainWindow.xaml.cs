@@ -35,6 +35,7 @@ namespace ArschlochHost
         private Int16 ammount = 0;
         private bool listening = false;
         private bool playersConnecting = true;
+        int currentPlayer = -1;
 
 
 
@@ -128,6 +129,10 @@ namespace ArschlochHost
                 int byteCardsPos = 0;
                 foreach(int card in players[i].getHandCards())
                 {
+                    if(card == 1)
+                    {
+                        currentPlayer = i;
+                    }
                     tempByteCards = BitConverter.GetBytes(card);
                     int m = byteCardsPos + 4;
                     int tempByteCardsPos = 0;
