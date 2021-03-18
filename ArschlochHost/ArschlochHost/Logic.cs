@@ -39,5 +39,24 @@ namespace ArschlochHost
             }
             return count;
         }
+
+        public void switchCards(player arschloch, player koenig, int acardID, int kcardID)
+        {
+
+            for (int i=0; i<arschloch.getHandCards().Length;i++)
+            {
+                if (arschloch.getHandCards()[i]==acardID)
+                {
+                    arschloch.getHandCards()[i] = kcardID;
+                }
+            }
+            for(int i=0; i<koenig.getHandCards().Length;i++)
+            {
+                if(koenig.getHandCards()[i]==kcardID)
+                {
+                    koenig.getHandCards()[i] = acardID;
+                }
+            }
+        }
     }
 }
