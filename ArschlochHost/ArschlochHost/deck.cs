@@ -44,7 +44,9 @@ namespace ArschlochHost
             }
             return tmp;
         }
-
+        /// <summary>
+        /// resets the deck
+        /// </summary>
         public static void resetDeck()
         {
             for (int i = 0; i < Deck.Count; i++)
@@ -53,6 +55,12 @@ namespace ArschlochHost
             }
         }
 
+        /// <summary>
+        /// returns an int array consisting of ids of the cards that should be held by the player
+        /// one array for one player, random generated
+        /// </summary>
+        /// <param name="numOfPlayers"></param>
+        /// <returns></returns>
         public static int[] handoutCards(int numOfPlayers)
         {
             Random rand = new Random();
@@ -77,7 +85,13 @@ namespace ArschlochHost
 
         public static int getValue(int id)
         {
-            return Deck[id].value;
+            return Deck[id-1].value;
+        }
+
+        public static Card getCard(int id)
+        {
+            Card tmp = Deck[id - 1];
+            return tmp;
         }
 
        

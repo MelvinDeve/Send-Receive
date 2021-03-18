@@ -29,10 +29,10 @@ namespace ArschlochHost
         public int checkamount(int value, player currentplayer)
         {
             int count = 0;
-            int [] tmpcrads = currentplayer.getHandCards();
-            for (int i=0; i<tmpcrads.Length;i++)
+            int [] tmpcards = currentplayer.getHandCards();
+            for (int i=0; i<tmpcards.Length;i++)
             {
-                if (deck.getValue(tmpcrads[i])==value)
+                if (deck.getValue(tmpcards[i])==value)
                 {
                     count++;
                 }

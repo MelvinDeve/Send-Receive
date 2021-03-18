@@ -8,7 +8,7 @@ using System.Windows.Controls;
 
 namespace ArschlochHost
 {
-    class Card
+    public class Card
     {
         public int value;
         private string colour;
