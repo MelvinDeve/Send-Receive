@@ -32,5 +32,12 @@ namespace ArschlochClient
             rulesWindow.Show();
             this.Close();
         }
+        private void BtnJoin_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            CardField cardFieldWindow = new CardField();
+            cardFieldWindow.Show();
+            this.Close();
+        }
     }
 }

@@ -58,6 +58,7 @@
     <Compile Include="CardField.xaml.cs">
       <DependentUpon>CardField.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PictureBox.cs" />
     <Compile Include="Rules.xaml.cs">
       <DependentUpon>Rules.xaml</DependentUpon>
     </Compile>
@@ -116,6 +117,50 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Assets\pass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\10herz.png" />
+    <Resource Include="Assets\10karo.png" />
+    <Resource Include="Assets\10kreuz.png" />
+    <Resource Include="Assets\10piek.png" />
+    <Resource Include="Assets\11herz.png" />
+    <Resource Include="Assets\11karo.png" />
+    <Resource Include="Assets\11kreuz.png" />
+    <Resource Include="Assets\11piek.png" />
+    <Resource Include="Assets\12herz.png" />
+    <Resource Include="Assets\12karo.png" />
+    <Resource Include="Assets\12kreuz.png" />
+    <Resource Include="Assets\12piek.png" />
+    <Resource Include="Assets\13herz.png" />
+    <Resource Include="Assets\13karo.png" />
+    <Resource Include="Assets\13kreuz.png" />
+    <Resource Include="Assets\13piek.png" />
+    <Resource Include="Assets\14herz.png" />
+    <Resource Include="Assets\14karo.png" />
+    <Resource Include="Assets\14kreuz.png" />
+    <Resource Include="Assets\14piek.png" />
+    <Resource Include="Assets\6herz.png" />
+    <Resource Include="Assets\6karo.png" />
+    <Resource Include="Assets\6kreuz.png" />
+    <Resource Include="Assets\6piek.png" />
+    <Resource Include="Assets\7herz.png" />
+    <Resource Include="Assets\7karo.png" />
+    <Resource Include="Assets\7kreuz.png" />
+    <Resource Include="Assets\7piek.png" />
+    <Resource Include="Assets\8herz.png" />
+    <Resource Include="Assets\8karo.png" />
+    <Resource Include="Assets\8kreuz.png" />
+    <Resource Include="Assets\8piek.png" />
+    <Resource Include="Assets\9herz.png" />
+    <Resource Include="Assets\9karo.png" />
+    <Resource Include="Assets\9kreuz.png" />
+    <Resource Include="Assets\9piek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Felt-Blue.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\new_hand.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

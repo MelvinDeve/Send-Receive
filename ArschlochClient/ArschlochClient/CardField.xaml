@@ -7,12 +7,25 @@
         mc:Ignorable="d"
         Icon="Assets/game_icon.png"
         Title="CardField" Height="850" Width="1200">
-    <Grid Background="#3498db">
-        <Button x:Name="BtnPass" HorizontalAlignment="Left" Width="187" Margin="10,354,0,391" Background="#FF2980B9" BorderBrush="Black" FontWeight="Bold" FontSize="22">
+    <Window.Background>
+        <ImageBrush ImageSource="Assets/Felt-Blue.jpg"/>
+    </Window.Background>
+    <Grid>
+        <Button x:Name="BtnPass" HorizontalAlignment="Left" Width="187" Margin="10,376,0,369" Background="#FF3498DB" BorderBrush="Black" FontWeight="Bold" FontSize="22">
             <StackPanel Width="187">
                 <Image Source="Assets/pass.png" Height="30" Margin="0,0,0,-2" />
-                <TextBox FontSize="28" Height="35" Text="Aussetzen" Margin="20,0,27,0" Background="#FF2980B9" BorderBrush="{x:Null}" VerticalAlignment="Top" Padding="0,-5,0,0"/>
+                <TextBox FontSize="28" Height="35" Text="Aussetzen" Margin="20,0,27,0" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top" Padding="0,-5,0,0" SelectionBrush="{x:Null}" IsReadOnly="True"/>
             </StackPanel>
         </Button>
+
+        <Button x:Name="BtnNewHand" HorizontalAlignment="Left" Width="187" Margin="10,10,0,735" Background="#FF3498DB" BorderBrush="Black" FontWeight="Bold" FontSize="22" Click="BtnNewHand_Click">
+            <StackPanel Width="187">
+                <Image Source="Assets/new_hand.png" Height="30" Margin="0,0,0,-2" />
+                <TextBox FontSize="28" Height="35" Text="Neue Hand" Margin="10,0" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top" Padding="0,-5,0,0" SelectionBrush="{x:Null}" IsReadOnly="True"/>
+            </StackPanel>
+        </Button>
+
+
+        <Image x:Name="imgDynamic" Width="136" HorizontalAlignment="Right" Margin="0,583,778,10" />
     </Grid>
 </Window>

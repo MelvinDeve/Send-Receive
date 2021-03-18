@@ -7,10 +7,13 @@
         mc:Ignorable="d"
         Icon="Assets/game_icon.png"
         Title="Hauptmenü" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
-    <Grid Background="#3498db">
+    <Window.Background>
+        <ImageBrush ImageSource="Assets/Felt-Blue.jpg"/>
+    </Window.Background>
+    <Grid>
         <Image x:Name="ImgLogo" Source="Assets/card_hand.png" Margin="209,78,209,-20"/>
         <Label x:Name="LblHeader" Content="Arschloch" VerticalAlignment="Top" Height="63" Margin="305,10,305,0" FontSize="36" FontWeight="Bold" Foreground="Black"/>
-        <Button x:Name="BtnRules" Content="Regeln" HorizontalAlignment="Left" VerticalAlignment="Top" Width="115" Margin="54,203,0,0" Height="52" Background="#FF2980B9" BorderBrush="Black" Click="BtnRules_Click"/>
-        <Button x:Name="BtnJoin" Content="Spiel beitreten" HorizontalAlignment="Left" VerticalAlignment="Top" Width="115" Height="51" Margin="629,204,0,0" Background="#FF2980B9" BorderBrush="Black"/>
+        <Button x:Name="BtnRules" Content="Regeln" HorizontalAlignment="Left" VerticalAlignment="Top" Width="115" Margin="54,203,0,0" Height="52" Background="#FF3498DB" BorderBrush="Black" Click="BtnRules_Click"/>
+        <Button x:Name="BtnJoin" Content="Spiel beitreten" HorizontalAlignment="Left" VerticalAlignment="Top" Width="115" Height="51" Margin="629,204,0,0" Background="#FF3498DB" BorderBrush="Black" Click="BtnJoin_Click"/>
     </Grid>
 </Window>
