@@ -27,10 +27,15 @@ namespace ArschlochClient
         int Port = 8000;
         TcpClient client = null;
         List<int> cards = new List<int>();
+        Image[] images;
+
+
 
         public MainWindow()
         {
             InitializeComponent();
+            images = new Image[18] {Card1, Card2, Card3, Card4, Card5, Card6, Card7, Card8,
+            Card9, Card10, Card11, Card12, Card13, Card14, Card15, Card16, Card17, Card18};
         }
 
         private void connect_Click(object sender, RoutedEventArgs e)
@@ -39,8 +44,11 @@ namespace ArschlochClient
             {
                 client = new TcpClient();
                 client.Connect(ipAddress, Port);
+                getCards();
+                /*
                 Thread worker = new Thread(getCards);
                 worker.Start();
+                */
             }
         }
 
@@ -55,7 +63,7 @@ namespace ArschlochClient
                     int i;
 
                     Byte[] bytes = new Byte[256];
-                    List<int> cards = new List<int>();
+                    //List<int> cards = new List<int>();
                     while ((i = stream.Read(bytes, 0, bytes.Length)) != 0)
                     {
                         int j = 0;
@@ -73,18 +81,28 @@ namespace ArschlochClient
             {
 
             }
-
+            /*
+            Image[] images = new Image[18] {Card1, Card2, Card3, Card4, Card5, Card6, Card7, Card8,
+            Card9, Card10, Card11, Card12, Card13, Card14, Card15, Card16, Card17, Card18};
+            */
+            int n = 0;
+            foreach (int card in cards)
+            {
+                BitmapImage bitmap = new BitmapImage();
+                bitmap.BeginInit();
+                bitmap.UriSource = new Uri(@"Assets/"+deck.getCard(card).value+deck.getCard(card).getColour()+".png", UriKind.RelativeOrAbsolute);
+                bitmap.EndInit();
+                
+                images[n].Source = bitmap;
+                n++;
+            }
 
 
         }
 
         private void BtnNewHand_Click(object sender, RoutedEventArgs e)
         {
-            BitmapImage bitmap = new BitmapImage();
-            bitmap.BeginInit();
-            bitmap.UriSource = new Uri(@"Assets/11herz.png", UriKind.RelativeOrAbsolute);
-            bitmap.EndInit();
-            CardStack.Source = bitmap;
+            
         }
 
         public void getTurn()

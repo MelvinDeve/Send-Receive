@@ -15,7 +15,6 @@ namespace ArschlochClient.Classes
             HandOfCards MyHand = new HandOfCards();
             SimpleReceive Rec = new SimpleReceive();
             List<Card> Hand = new List<Card>();
-            deck deck = new deck();
 
             foreach (int id in ids)
             {

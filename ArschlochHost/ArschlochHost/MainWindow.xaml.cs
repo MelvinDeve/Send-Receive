@@ -157,19 +157,13 @@ namespace ArschlochHost
                 playersConnecting = false;
                 createPlayerList();
                 publishPlayerHands();
+                publishTurn(currentPlayer);
             }
             else
             {
                 return;
             }
-            if(currentCard == 0)
-            {
 
-            }
-            else
-            {
-
-            }
         }
 
         private void getStartingPlayer()
@@ -202,6 +196,7 @@ namespace ArschlochHost
                 message[6] = ammountArr[1];
 
                 client.Send(message);
+                playercount++;
             }
         }
 
