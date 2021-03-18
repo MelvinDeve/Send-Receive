@@ -28,6 +28,9 @@ namespace ArschlochHost
             handedOut = false;
 
         }
+        public string getColour () {
+            return colour;
+        }
 
         private Image setImg()
         {

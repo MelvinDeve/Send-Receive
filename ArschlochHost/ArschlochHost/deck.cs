@@ -94,6 +94,27 @@ namespace ArschlochHost
             return tmp;
         }
 
+        /// <summary>
+        /// returns the id of the chosen card, returns 0 if parameters are not valid
+        /// </summary>
+        /// <param name="value"></param>
+        /// <param name="colour"></param>
+        /// <returns></returns>
+        public static int getCardid(int value, string colour)
+        {
+
+            for (int i=0;i<Deck.Count; i++ )
+            {
+                if (Deck[i].value == value && Deck[i].getColour()==colour)
+                {
+                    return Deck[i].id;
+                }
+               
+
+            }
+            return 0;
+        }
+
        
     }
 
