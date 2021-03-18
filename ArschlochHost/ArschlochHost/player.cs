@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Threading;
 
 namespace ArschlochHost
 {
@@ -14,7 +16,8 @@ namespace ArschlochHost
         public player(string name, int numofPlayers)
         {
             this.name = name;
-            handcards = deck.handoutCards(numofPlayers);
+            Application.Current.Dispatcher.Invoke(() => { this.handcards = deck.handoutCards(numofPlayers); });
+            //handcards = deck.handoutCards(numofPlayers);
         }
 
         public int[] getHandCards()

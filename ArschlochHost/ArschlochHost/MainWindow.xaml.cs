@@ -28,7 +28,7 @@ namespace ArschlochHost
         private List<player> players = new List<player>();
         bool _isConnected;
         bool drRunning = false;
-        IPAddress ipAddress = IPAddress.Parse("192.168.178.28");
+        IPAddress ipAddress = IPAddress.Parse("127.0.0.1");
         int Port = 8000;
         TcpListener host = null;
         private int currentCard = 0;
@@ -46,8 +46,11 @@ namespace ArschlochHost
 
         private void connect_Click(object sender, RoutedEventArgs e)
         {
-            Thread worker = new Thread(getResponse);
-            worker.Start();
+            if (host == null)
+            {
+                Thread worker = new Thread(getResponse);
+                worker.Start();
+            }
         }
 
         private void getResponse()

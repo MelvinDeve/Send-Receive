@@ -23,9 +23,9 @@ namespace ArschlochClient
     /// </summary>
     public partial class MainWindow : Window
     {
-        IPAddress ipAddress = IPAddress.Parse("192.168.178.28");
+        IPAddress ipAddress = IPAddress.Parse("127.0.0.1");
         int Port = 8000;
-        TcpListener host = null;
+        TcpClient client = null;
 
         public MainWindow()
         {
@@ -34,8 +34,10 @@ namespace ArschlochClient
 
         private void connect_Click(object sender, RoutedEventArgs e)
         {
-            if (host == null)
+            if (client == null)
             {
+                client = new TcpClient();
+                client.Connect(ipAddress, Port);
                 Thread worker = new Thread(getCards);
                 worker.Start();
             }
@@ -45,12 +47,9 @@ namespace ArschlochClient
         {
             try
             {
-                host = new TcpListener(ipAddress, Port);
-                host.Start();
 
                 while (true)
                 {
-                    TcpClient client = host.AcceptTcpClient();
                     NetworkStream stream = client.GetStream();
                     int i;
 
@@ -64,7 +63,9 @@ namespace ArschlochClient
                             cards.Add(BitConverter.ToInt32(bytes, j));
                             j += 4;
                         }
+                        break;
                     }
+                    break;
                 }
             }
             catch (Exception e)
