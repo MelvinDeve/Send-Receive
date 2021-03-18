@@ -26,6 +26,7 @@ namespace ArschlochClient
         IPAddress ipAddress = IPAddress.Parse("127.0.0.1");
         int Port = 8000;
         TcpClient client = null;
+        List<int> cards = new List<int>();
 
         public MainWindow()
         {
@@ -70,7 +71,54 @@ namespace ArschlochClient
             }
             catch (Exception e)
             {
-                Dispatcher.Invoke(() => { textBlock.Text += "\n Exception: " + e; });
+
+            }
+
+
+
+        }
+
+        private void BtnNewHand_Click(object sender, RoutedEventArgs e)
+        {
+            BitmapImage bitmap = new BitmapImage();
+            bitmap.BeginInit();
+            bitmap.UriSource = new Uri(@"Assets/11herz.png", UriKind.RelativeOrAbsolute);
+            bitmap.EndInit();
+            CardStack.Source = bitmap;
+        }
+
+        public void getTurn()
+        {
+            try
+            {
+
+                while (true)
+                {
+                    NetworkStream stream = client.GetStream();
+                    int i;
+
+                    Byte[] bytes = new Byte[256];
+                    bool myTurn = false;
+                    int cardId = -1;
+                    Int16 ammount = -1;
+                    while ((i = stream.Read(bytes, 0, bytes.Length)) != 0)
+                    {
+                        myTurn = BitConverter.ToBoolean(bytes, 0);
+                        cardId = BitConverter.ToInt32(bytes, 1);
+                        ammount = BitConverter.ToInt16(bytes, 5);
+                        int j = 0;
+                        while (bytes[j] != 0)
+                        {
+                            cards.Add(BitConverter.ToInt32(bytes, j));
+                            j += 4;
+                        }
+                        break;
+                    }
+                    break;
+                }
+            }
+            catch (Exception e)
+            {
 
             }
         }

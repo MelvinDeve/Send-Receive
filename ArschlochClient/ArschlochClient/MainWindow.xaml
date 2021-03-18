@@ -5,11 +5,136 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ArschlochClient"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Icon="Assets/game_icon.png"
+        Title="CardField" Height="850" Width="1200" ResizeMode="NoResize">
+    <Window.Background>
+        <ImageBrush ImageSource="Assets/Felt-Blue.jpg"/>
+    </Window.Background>
     <Grid>
-        <Button x:Name="connect" Content="Button" HorizontalAlignment="Left" Margin="121,86,0,0" VerticalAlignment="Top" Width="75" Click="connect_Click"/>
-        <!--<TextBox x:Name="textBlock" HorizontalAlignment="Left" Height="234" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Margin="491,92,0,0"/>-->
-        <TextBox x:Name="textBlock" HorizontalAlignment="Left" Height="234" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Margin="491,92,0,0" TextChanged="textBlock_TextChanged"/>
+        <Button x:Name="BtnPass" HorizontalAlignment="Left" Width="187" Margin="10,376,0,369" Background="#FF3498DB" BorderBrush="Black" FontWeight="Bold" FontSize="22">
+            <StackPanel Width="187">
+                <Image Source="Assets/pass.png" Height="30" Margin="0,0,0,-2" />
+                <TextBox FontSize="28" Height="35" Text="Aussetzen" Margin="20,0,27,0" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top" Padding="0,-5,0,0" SelectionBrush="{x:Null}" IsReadOnly="True"/>
+            </StackPanel>
+        </Button>
+
+        <Button x:Name="BtnNewHand" HorizontalAlignment="Left" Width="187" Margin="10,10,0,735" Background="#FF3498DB" BorderBrush="Black" FontWeight="Bold" FontSize="22" Click="connect_Click">
+            <StackPanel Width="187">
+                <Image Source="Assets/new_hand.png" Height="30" Margin="0,0,0,-2" />
+                <TextBox FontSize="28" Height="35" Text="Connect" Margin="10,0" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top" Padding="0,-5,0,0" SelectionBrush="{x:Null}" IsReadOnly="True"/>
+            </StackPanel>
+        </Button>
+
+        <StackPanel >
+            <Image x:Name="CardStack" Height="400" Margin="396,180,0,0" HorizontalAlignment="Left" Width="400" />
+        </StackPanel>
+
+        <Button x:Name="BtnCard1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="100,640,0,0" Height="170" Background="{x:Null}" BorderBrush="{x:Null}">
+            <StackPanel>
+                <Image Name="Card1" Width="120" Height="170"/>
+            </StackPanel>
+        </Button>
+
+        <Button x:Name="BtnCard2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="150,640,0,0" Height="170" Background="{x:Null}" BorderBrush="{x:Null}">
+            <StackPanel>
+                <Image Name="Card2" Width="120" Height="170"/>
+            </StackPanel>
+        </Button>
+
+        <Button x:Name="BtnCard3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="200,640,0,0" Height="170" Background="{x:Null}" BorderBrush="{x:Null}">
+            <StackPanel>
+                <Image Name="Card3" Width="120" Height="170"/>
+            </StackPanel>
+        </Button>
+
+        <Button x:Name="BtnCard4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="250,640,0,0" Height="170" Background="{x:Null}" BorderBrush="{x:Null}">
+            <StackPanel>
+                <Image Name="Card4" Width="120" Height="170"/>
+            </StackPanel>
+        </Button>
+
+        <Button x:Name="BtnCard5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="250,640,0,0" Height="170" Background="{x:Null}" BorderBrush="{x:Null}">
+            <StackPanel>
+                <Image Name="Card5" Width="120" Height="170"/>
+            </StackPanel>
+        </Button>
+
+        <Button x:Name="BtnCard6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="300,640,0,0" Height="170" Background="{x:Null}" BorderBrush="{x:Null}">
+            <StackPanel>
+                <Image Name="Card6" Width="120" Height="170"/>
+            </StackPanel>
+        </Button>
+
+        <Button x:Name="BtnCard7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="350,640,0,0" Height="170" Background="{x:Null}" BorderBrush="{x:Null}">
+            <StackPanel>
+                <Image Name="Card7" Width="120" Height="170"/>
+            </StackPanel>
+        </Button>
+
+        <Button x:Name="BtnCard8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="400,640,0,0" Height="170" Background="{x:Null}" BorderBrush="{x:Null}">
+            <StackPanel>
+                <Image Name="Card8" Width="120" Height="170"/>
+            </StackPanel>
+        </Button>
+
+        <Button x:Name="BtnCard9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="450,640,0,0" Height="170" Background="{x:Null}" BorderBrush="{x:Null}">
+            <StackPanel>
+                <Image Name="Card9" Width="120" Height="170"/>
+            </StackPanel>
+        </Button>
+
+        <Button x:Name="BtnCard10" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="500,640,0,0" Height="170" Background="{x:Null}" BorderBrush="{x:Null}">
+            <StackPanel>
+                <Image Name="Card10" Width="120" Height="170"/>
+            </StackPanel>
+        </Button>
+
+        <Button x:Name="BtnCard11" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="550,640,0,0" Height="170" Background="{x:Null}" BorderBrush="{x:Null}">
+            <StackPanel>
+                <Image Name="Card11" Width="120" Height="170"/>
+            </StackPanel>
+        </Button>
+
+        <Button x:Name="BtnCard12" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="600,640,0,0" Height="170" Background="{x:Null}" BorderBrush="{x:Null}">
+            <StackPanel>
+                <Image Name="Card12" Width="120" Height="170"/>
+            </StackPanel>
+        </Button>
+
+        <Button x:Name="BtnCard13" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="650,640,0,0" Height="170" Background="{x:Null}" BorderBrush="{x:Null}">
+            <StackPanel>
+                <Image Name="Card13" Width="120" Height="170"/>
+            </StackPanel>
+        </Button>
+
+        <Button x:Name="BtnCard14" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="700,640,0,0" Height="170" Background="{x:Null}" BorderBrush="{x:Null}">
+            <StackPanel>
+                <Image Name="Card14" Width="120" Height="170"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="BtnCard15" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="750,640,0,0" Height="170" Background="{x:Null}" BorderBrush="{x:Null}">
+            <StackPanel>
+                <Image Name="Card15" Width="120" Height="170"/>
+            </StackPanel>
+        </Button>
+
+        <Button x:Name="BtnCard16" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="800,640,0,0" Height="170" Background="{x:Null}" BorderBrush="{x:Null}">
+            <StackPanel>
+                <Image Name="Card16" Width="120" Height="170"/>
+            </StackPanel>
+        </Button>
+
+        <Button x:Name="BtnCard17" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="850,640,0,0" Height="170" Background="{x:Null}" BorderBrush="{x:Null}">
+            <StackPanel>
+                <Image Name="Card17" Width="120" Height="170"/>
+            </StackPanel>
+        </Button>
+
+        <Button x:Name="BtnCard18" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="900,640,0,0" Height="170" Background="{x:Null}" BorderBrush="{x:Null}">
+            <StackPanel>
+                <Image Name="Card18" Width="120" Height="170"/>
+            </StackPanel>
+        </Button>
 
     </Grid>
 </Window>
